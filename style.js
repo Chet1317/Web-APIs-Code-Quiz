@@ -1,4 +1,8 @@
+const startButton = document.getElementById("start-button")
+startButton = addEventListener("click", startgame)
+
 function startgame (){
+
 
 }
 
