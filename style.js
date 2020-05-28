@@ -5,7 +5,7 @@ startButton.addEventListener('click', startgame)
 
 function startgame (){
     console.log("start game")
-
+    mixedQuestions = question.sort(() => Math.random() -.5 )
     setNextQuestion()
 }
 
