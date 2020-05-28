@@ -1,12 +1,11 @@
 const startButton = document.getElementById("start-btn")
 const questionBox = document.getElementById("question-container")
-const mixedQuestions, currentquestionindex
+
 startButton.addEventListener('click', startgame)
 
 function startgame (){
     console.log("start game")
-    mixedQuestions = question.sort(() => Math.random() -.5 )
-    setNextQuestion()
+   
 }
 
 function nextquestion (){
