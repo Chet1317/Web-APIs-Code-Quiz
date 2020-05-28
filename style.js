@@ -5,7 +5,7 @@ startButton.addEventListener('click', startgame)
 
 function startgame (){
     console.log("start game")
-   
+   questionBox.classList.remove("hide")
 }
 
 function nextquestion (){
