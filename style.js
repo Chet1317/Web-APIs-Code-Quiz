@@ -14,3 +14,14 @@ function nextquestion (){
 function answer (){
 
 }
+
+const questions = [
+    {
+        question: "Who invented Javascript?",
+        answer: [
+            {text: "Brendan Eich", correct: true}
+            {text: "Bill Gates", correct: false}
+            {text: "Donald Trump", correct: false}
+            {text: "Steve Jobs", correct: false}]
+    }
+]
