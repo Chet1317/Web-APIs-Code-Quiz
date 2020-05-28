@@ -11,6 +11,10 @@ function startgame (){
    answerEl.innerHTML = questionElement[counter].answer[0].text
    answerEl = document.getElementById("answer-2")
    answerEl.innerHTML = questionElement[counter].answer[1].text
+   answerEl = document.getElementById("answer-3")
+   answerEl.innerHTML = questionElement[counter].answer[2].text
+   answerEl = document.getElementById("answer-4")
+   answerEl.innerHTML = questionElement[counter].answer[3].text
     console.log("start game")
     counter++
 
@@ -35,5 +39,14 @@ const questionElement = [
             {text: "Bill Gates", correct: false},
             {text: "Donald Trump", correct: false},
             {text: "Steve Jobs", correct: false}]
+    },
+    {
+        question: "Who invented Javascript?",
+        answer: [
+            {text: "Brendan Eich", correct: true},
+            {text: "Bill Gates", correct: false},
+            {text: "Donald Trump", correct: false},
+            {text: "Steve Jobs", correct: false}]
     }
+
 ]
