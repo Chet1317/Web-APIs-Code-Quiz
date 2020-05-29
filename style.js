@@ -79,13 +79,20 @@ const questionElement = [
         }
 
         ,
-        {question: "What is a paramater",
+        {question: "What is a function",
         answer: [
             {text: "Used in a function", correct: true},
             {text: "Bill Gates", correct: false},
             {text: "Donald Trump", correct: false},
             {text: "Steve Jobs", correct: false}]
         }
-
+        ,
+        {question: "What is a Java",
+        answer: [
+            {text: "Used in a function", correct: true},
+            {text: "Bill Gates", correct: false},
+            {text: "Donald Trump", correct: false},
+            {text: "Steve Jobs", correct: false}]
+        }
        
 ]
