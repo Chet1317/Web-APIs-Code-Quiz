@@ -3,8 +3,12 @@ const startButton = document.getElementById("start-btn")
 startButton.addEventListener('click', startgame)
 const nextanswer1 = document.getElementById("answer-1")
 const nextanswer2 = document.getElementById("answer-2")
+const nextanswer3 = document.getElementById("answer-3")
+const nextanswer4 = document.getElementById("answer-4")
 nextanswer1.addEventListener("click", nextquestion)
 nextanswer2.addEventListener("click", nextquestion)
+nextanswer3.addEventListener("click", nextquestion)
+nextanswer4.addEventListener("click", nextquestion)
 var counter = 0
 
 function startgame (){
@@ -83,12 +87,5 @@ const questionElement = [
             {text: "Steve Jobs", correct: false}]
         }
 
-        ,
-        {question: "What is a $ in Java",
-        answer: [
-            {text: "Used in a function", correct: true},
-            {text: "Bill Gates", correct: false},
-            {text: "Donald Trump", correct: false},
-            {text: "Steve Jobs", correct: false}]
-        }
+       
 ]
