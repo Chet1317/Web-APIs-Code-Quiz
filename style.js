@@ -75,7 +75,9 @@ function addTime(){
 function removeTime(){
     countdown -= 30;            
 }
-
+function finalScore(){
+    
+}
 
     const questionElement = [
     {
