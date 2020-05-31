@@ -1,7 +1,8 @@
 
 const startButton = document.getElementById("start-btn");
 
-startButton.addEventListener("click", startgame);
+startButton.addEventListener("click", startTimer);
+timer.addEventListener("click", startTimer)
 const nextanswer1 = document.getElementById("answer-1");
 const nextanswer2 = document.getElementById("answer-2");
 const nextanswer3 = document.getElementById("answer-3");
@@ -15,7 +16,7 @@ var counter = 0;
 
 
 function startgame (){
-    
+
    var questionEl = document.getElementById("question") 
    questionEl.innerText = questionElement[counter].question
    var answerEl = document.getElementById("answer-1")
@@ -32,7 +33,7 @@ function startgame (){
 }
 
 function nextquestion (){
-    
+    timer = setInterval( updateTimer, 1000 );
     var questionEl = document.getElementById("question") 
     questionEl.innerText = questionElement[counter].question
     var answerEl = document.getElementById("answer-1")
@@ -88,10 +89,10 @@ startTimer();
     
     {question: "JavaScript was invented in what year?",
         answer: [
-            {text: "1986", correct: true},
-            {text: "Bill Gates", correct: false},
-            {text: "Donald Trump", correct: false},
-            {text: "Steve Jobs", correct: false}]
+            {text: "1986", correct: false},
+            {text: "1995", correct: true},
+            {text: "1996", correct: false},
+            {text: "2000", correct: false}]
         },
         {question: "What is a paramater",
         answer: [
