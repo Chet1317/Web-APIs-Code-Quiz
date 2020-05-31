@@ -2,7 +2,7 @@
 const startButton = document.getElementById("start-btn");
 
 startButton.addEventListener("click", startTimer);
-timer.addEventListener("click", startTimer)
+startButton.addEventListener("click", startgame);
 const nextanswer1 = document.getElementById("answer-1");
 const nextanswer2 = document.getElementById("answer-2");
 const nextanswer3 = document.getElementById("answer-3");
@@ -33,7 +33,7 @@ function startgame (){
 }
 
 function nextquestion (){
-    timer = setInterval( updateTimer, 1000 );
+   
     var questionEl = document.getElementById("question") 
     questionEl.innerText = questionElement[counter].question
     var answerEl = document.getElementById("answer-1")
@@ -76,7 +76,7 @@ function removeTime(){
     countdown -= 30;            
 }
 
-startTimer();
+
     const questionElement = [
     {
         question: "Who invented Javascript?",
