@@ -94,12 +94,12 @@ startTimer();
             {text: "1996", correct: false},
             {text: "2000", correct: false}]
         },
-        {question: "What is a paramater",
+        {question: "what is the $ in JavaScript",
         answer: [
-            {text: "Used in a function", correct: true},
-            {text: "Bill Gates", correct: false},
-            {text: "Donald Trump", correct: false},
-            {text: "Steve Jobs", correct: false}]
+            {text: "Nothing", correct: false},
+            {text: "Money", correct: false},
+            {text: "Identifier", correct: true},
+            {text: "Parameter", correct: false}]
         },
         {question: "What is a function",
         answer: [
