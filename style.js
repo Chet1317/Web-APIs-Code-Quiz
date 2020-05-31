@@ -101,12 +101,12 @@ startTimer();
             {text: "Identifier", correct: true},
             {text: "Parameter", correct: false}]
         },
-        {question: "What is a function",
+        {question: "What is the logical symbol for OR in  JavaScript",
         answer: [
-            {text: "Used in a function", correct: true},
-            {text: "Bill Gates", correct: false},
-            {text: "Donald Trump", correct: false},
-            {text: "Steve Jobs", correct: false}]
+            {text: "||", correct: true},
+            {text: "*", correct: false},
+            {text: "^", correct: false},
+            {text: "%", correct: false}]
         },
         {question: "What is a Java",
         answer: [
