@@ -1,6 +1,5 @@
 
 const startButton = document.getElementById("start-btn");
-
 startButton.addEventListener("click", startTimer);
 startButton.addEventListener("click", startgame);
 const nextanswer1 = document.getElementById("answer-1");
@@ -12,8 +11,6 @@ nextanswer2.addEventListener("click", nextquestion);
 nextanswer3.addEventListener("click", nextquestion);
 nextanswer4.addEventListener("click", nextquestion);
 var counter = 0;
-
-
 
 function startgame (){
 
@@ -28,12 +25,11 @@ function startgame (){
    answerEl = document.getElementById("answer-4")
    answerEl.innerHTML = questionElement[counter].answer[3].text
   
-    console.log("start game")
+   console.log("start game")
 
 }
 
-function nextquestion (){
-   
+function nextquestion (event){
     var questionEl = document.getElementById("question") 
     questionEl.innerText = questionElement[counter].question
     var answerEl = document.getElementById("answer-1")
@@ -44,16 +40,20 @@ function nextquestion (){
     answerEl.innerHTML = questionElement[counter].answer[2].text
     answerEl = document.getElementById("answer-4")
     answerEl.innerHTML = questionElement[counter].answer[3].text
+    counter++
     
-    
+}
+
+function correctAnswer(){
+    alert("Correct")
     counter++
 }
+
 let countdown = 200;
 let timer;
 
 function updateTimer(){
-    countdown -= 1;
-    
+    countdown -= 1;  
     if( countdown<0 ){
         document.querySelector('#timer').innerHTML = 
             `<img src='https://image.flaticon.com/icons/svg/100/100291.svg' width=64 /> Time up!`;
@@ -67,19 +67,21 @@ function updateTimer(){
 function startTimer(){
     timer = setInterval( updateTimer, 1000 );
 }
+function yourScore(){
+    clearInterval( timer );
+    alert(document.querySelector('#timer').innerHTML = 
+    `${countdown}s left!`)
+}
 
 function addTime(){
     countdown += 30;
 }
 
 function removeTime(){
-    countdown -= 30;            
-}
-function finalScore(){
-    
+    countdown -= 30;           
 }
 
-    const questionElement = [
+const questionElement=[
     {
         question: "Who invented Javascript?",
         answer: [
@@ -91,16 +93,16 @@ function finalScore(){
     
     {question: "JavaScript was invented in what year?",
         answer: [
-            {text: "1986", correct: false},
             {text: "1995", correct: true},
+            {text: "1986", correct: false},
             {text: "1996", correct: false},
             {text: "2000", correct: false}]
         },
         {question: "what is the $ in JavaScript",
         answer: [
-            {text: "Nothing", correct: false},
-            {text: "Money", correct: false},
             {text: "Identifier", correct: true},
+            {text: "Money", correct: false},
+            {text: "Nothing", correct: true},
             {text: "Parameter", correct: false}]
         },
         {question: "What is the logical symbol for OR in  JavaScript",
@@ -112,9 +114,10 @@ function finalScore(){
         },
         {question: "What is a Java",
         answer: [
-            {text: "Used in a function", correct: true},
-            {text: "Bill Gates", correct: false},
-            {text: "Donald Trump", correct: false},
-            {text: "Steve Jobs", correct: false}]
-        }
-    ] 
+            {text: "Coffee", correct: true},
+            {text: "Tea", correct: false},
+            {text: "Beer", correct: false},
+            {text: "Wine", correct: false}]
+     },
+    
+    ]
