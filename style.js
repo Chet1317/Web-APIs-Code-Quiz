@@ -15,15 +15,15 @@ var counter = 0;
 function startgame (){
 
    var questionEl = document.getElementById("question") 
-   questionEl.innerText = questionElement[counter].question
+   questionEl.innerText = questionElement[counter].text
    var answerEl = document.getElementById("answer-1")
-   answerEl.innerHTML = questionElement[counter].answer[0].text
+   answerEl.innerHTML = questionElement[counter].answers[0]
    answerEl = document.getElementById("answer-2")
-   answerEl.innerHTML = questionElement[counter].answer[1].text
+   answerEl.innerHTML = questionElement[counter].answers[1]
    answerEl = document.getElementById("answer-3")
-   answerEl.innerHTML = questionElement[counter].answer[2].text
+   answerEl.innerHTML = questionElement[counter].answers[2]
    answerEl = document.getElementById("answer-4")
-   answerEl.innerHTML = questionElement[counter].answer[3].text
+   answerEl.innerHTML = questionElement[counter].answers[3]
   counter++
    console.log("start game")
 
@@ -31,15 +31,15 @@ function startgame (){
 
 function nextquestion (event){
     var questionEl = document.getElementById("question") 
-    questionEl.innerText = questionElement[counter].question
+    questionEl.innerText = questionElement[counter].text
     var answerEl = document.getElementById("answer-1")
-    answerEl.innerHTML = questionElement[counter].answer[0].text
+    answerEl.innerHTML = questionElement[counter].answers[0]
     answerEl = document.getElementById("answer-2")
-    answerEl.innerHTML = questionElement[counter].answer[1].text
+    answerEl.innerHTML = questionElement[counter].answers[1]
     answerEl = document.getElementById("answer-3")
-    answerEl.innerHTML = questionElement[counter].answer[2].text
+    answerEl.innerHTML = questionElement[counter].answers[2]
     answerEl = document.getElementById("answer-4")
-    answerEl.innerHTML = questionElement[counter].answer[3].text
+    answerEl.innerHTML = questionElement[counter].answers[3]
     counter++
     
 }
