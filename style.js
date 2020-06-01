@@ -24,7 +24,7 @@ function startgame (){
    answerEl.innerHTML = questionElement[counter].answer[2].text
    answerEl = document.getElementById("answer-4")
    answerEl.innerHTML = questionElement[counter].answer[3].text
-  
+  counter++
    console.log("start game")
 
 }
@@ -53,7 +53,8 @@ let countdown = 200;
 let timer;
 
 function updateTimer(){
-    countdown -= 1;  
+    countdown -= 1;
+    
     if( countdown<0 ){
         document.querySelector('#timer').innerHTML = 
             `<img src='https://image.flaticon.com/icons/svg/100/100291.svg' width=64 /> Time up!`;
@@ -61,6 +62,7 @@ function updateTimer(){
     } else {
         document.querySelector('#timer').innerHTML = 
             `${countdown}s left!`;
+
     }
 }
 
