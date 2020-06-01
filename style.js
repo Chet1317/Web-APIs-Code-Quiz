@@ -2,47 +2,32 @@
 const startButton = document.getElementById("start-btn");
 startButton.addEventListener("click", startTimer);
 startButton.addEventListener("click", startgame);
-const nextanswer1 = document.getElementById("answer-1");
-const nextanswer2 = document.getElementById("answer-2");
-const nextanswer3 = document.getElementById("answer-3");
-const nextanswer4 = document.getElementById("answer-4");
-nextanswer1.addEventListener("click", nextquestion);
-nextanswer2.addEventListener("click", nextquestion);
-nextanswer3.addEventListener("click", nextquestion);
-nextanswer4.addEventListener("click", nextquestion);
-var counter = 0;
+let questionNum
+let statsCorrectAnswers = 0;
+        let statsWrongAnswers = 0;
+        let timerInterval;
 
 function startgame (){
 
-   var questionEl = document.getElementById("question") 
-   questionEl.innerText = questionElement[counter].text
-   var answerEl = document.getElementById("answer-1")
-   answerEl.innerHTML = questionElement[counter].answers[0]
-   answerEl = document.getElementById("answer-2")
-   answerEl.innerHTML = questionElement[counter].answers[1]
-   answerEl = document.getElementById("answer-3")
-   answerEl.innerHTML = questionElement[counter].answers[2]
-   answerEl = document.getElementById("answer-4")
-   answerEl.innerHTML = questionElement[counter].answers[3]
-  counter++
-   console.log("start game")
+   
+    const currentQuestion = questionElement[questionNum];
+    document.querySelector('#question').innerHTML = currentQuestion.text;
 
-}
-
-function nextquestion (event){
-    var questionEl = document.getElementById("question") 
-    questionEl.innerText = questionElement[counter].text
-    var answerEl = document.getElementById("answer-1")
-    answerEl.innerHTML = questionElement[counter].answers[0]
-    answerEl = document.getElementById("answer-2")
-    answerEl.innerHTML = questionElement[counter].answers[1]
-    answerEl = document.getElementById("answer-3")
-    answerEl.innerHTML = questionElement[counter].answers[2]
-    answerEl = document.getElementById("answer-4")
-    answerEl.innerHTML = questionElement[counter].answers[3]
-    counter++
+    document.querySelector('#answers').innerHTML = '';
+    for( var i=0; i<currentQuestion.answers.length; i++ ){
+        const activeAnswer = currentQuestion.answers[i];
+        document.querySelector('#answers').innerHTML += 
+            `<li onClick="checkAnswer(event,'${activeAnswer}')" class="list-group-item">${activeAnswer}</li>`
     
+            console.log("start game")
+        }
 }
+  
+  
+
+
+
+
 
 function correctAnswer(){
     alert("Correct")
