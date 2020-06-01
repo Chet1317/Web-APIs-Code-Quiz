@@ -84,42 +84,17 @@ function removeTime(){
 }
 
 const questionElement=[
-    {
-        question: "Who invented Javascript?",
-        answer: [
-            {text: "Brendan Eich", correct: true},
-            {text: "Bill Gates", correct: false},
-            {text: "Donald Trump", correct: false},
-            {text: "Steve Jobs", correct: false}]
-    },
-    
-    {question: "JavaScript was invented in what year?",
-        answer: [
-            {text: "1995", correct: true},
-            {text: "1986", correct: false},
-            {text: "1996", correct: false},
-            {text: "2000", correct: false}]
-        },
-        {question: "what is the $ in JavaScript",
-        answer: [
-            {text: "Identifier", correct: true},
-            {text: "Money", correct: false},
-            {text: "Nothing", correct: true},
-            {text: "Parameter", correct: false}]
-        },
-        {question: "What is the logical symbol for OR in  JavaScript",
-        answer: [
-            {text: "||", correct: true},
-            {text: "*", correct: false},
-            {text: "^", correct: false},
-            {text: "%", correct: false}]
-        },
-        {question: "What is a Java",
-        answer: [
-            {text: "Coffee", correct: true},
-            {text: "Tea", correct: false},
-            {text: "Beer", correct: false},
-            {text: "Wine", correct: false}]
-     },
-    
-    ]
+    { text: "Who invented JavaScript?",
+              answers: [ "Brendan Eich", "Bill Gates", "Donald Trump", "Steve Jobs" ],
+              correctAnswer: "Brendan Eich" },
+    { text: "When was JavaScript invented?",
+              answers: [ "1985", "2000", "1995", "2011" ],
+              correctAnswer: "1995" },
+    { text: "What is the $ in Javascript?",
+              answers: ["Parameter", "Identifier", "Function", "Money"],
+              correctAnswer: "Identifier"},
+    { text: "What else could Java mean?",
+              answers: ["Coffee", "Beer", "Tea", "Ice cream"],
+              correctAnswer: "Coffee" 
+},
+        ];
