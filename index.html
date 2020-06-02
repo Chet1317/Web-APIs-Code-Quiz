@@ -7,29 +7,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    
 </head>
 <body>
-    <style>
-        h1{text-align: center;}
-        
-        h2{text-align: center;}
-    </style>
+    <div class='container'>
+        <h3 id='timer'></h3>
+        <button id="start-btn" class="btn btn-primary">Start</button>
+        <div id='alertCorrect' class="alert alert-success" style='display:none;'>
+            Good stuff, that was correct!
+          </div>
+          <div id='alertWrong' class="alert alert-danger" style='display:none;'>
+            Sorry that was wrong!
+          </div>
+        <hr />        
+        <h1 id='question'></h1>
+        <ul id='answers' class="list-group">
+          </ul>
 
-    <h1>Javascript Fundamentals Quiz</h1>
-        <hr>
-    <h2 id="timer"class="display-4">200</h2>
-            <div class = "container">
-                <div class="list-group">
-                <h3 class="btn btn-success" id="question">Question</h3>
-                    <button type="button" id="answers" class="list-group-item list-group-item-action">Answer1</button>
-                    <button type="button" id="answers" class="list-group-item list-group-item-action">Answer2</button>
-                    <button type="button" id="answers" class="list-group-item list-group-item-action">Answer3</button>
-                    <button type="button" id="answers" class="list-group-item list-group-item-action">Answer4</button> 
-                    <br>
-                    <button type="button" class=" btn btn-primary" id="start-btn">Start</button>
-                <br>
-            <div onClick="yourScore()" type="button" class="btn btn-danger" id="score">Push Me After Question 5 or Score!
-        </div>
-    </div>
-    </div>
     </div>
     <script defer src="style.js"></script>
 </body>
