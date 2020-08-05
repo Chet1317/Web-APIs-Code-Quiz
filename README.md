@@ -5,8 +5,6 @@ Code quiz is a fun little app that quizes the user JavaScript. The timer is set 
 
 <<<<<<< HEAD
 # App link: https://chet1317.github.io/Web-APIs-Code-Quiz/
-![image](https://user-images.githubusercontent.com/63617922/89428904-e6cc1280-d70a-11ea-91ba-17265ae0f65b.png)
-=======
 # App
 ![image](https://user-images.githubusercontent.com/63617922/89433988-fea69500-d710-11ea-8cf2-4eb26dbef984.png)
 
