@@ -95,3 +95,4 @@ function startGame(){
     showQuestion();
 }
 
+checkAnswer()
